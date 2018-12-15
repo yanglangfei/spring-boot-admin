@@ -1,0 +1,45 @@
+server:
+  port: 8088
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin123
+  boot:
+    admin:
+      notify:
+        mail:
+          to: 185601452@qq.com
+          from: 1036815637@qq.com
+  mail:
+    default-encoding: UTF-8
+    host: smtp.qq.com
+    password: ppfpfnspflnobdih
+    port: 25
+    username: 1036815637@qq.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+
+
+
