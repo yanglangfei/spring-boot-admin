@@ -11,13 +11,13 @@ spring:
       notify:
         mail:
           to: 185601452@qq.com
-          from: 1036815637@qq.com
+          from: xxx
   mail:
     default-encoding: UTF-8
     host: smtp.qq.com
     password: ppfpfnspflnobdih
     port: 25
-    username: 1036815637@qq.com
+    username: xxx@qq.com
     properties:
       mail:
         smtp:
